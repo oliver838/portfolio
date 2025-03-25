@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolió</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="getData.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -17,14 +18,14 @@
                 <li><a href="#contact">Kapcsolat</a></li>
             </ul>
         </nav>
-    
+        
         <!--hero section-->
         <section class="hero">
             <div class="fenti">  
               <img src="profil.png" alt="saját fotó">  
               <div class="nevesmotto">
                 <h1>Horváth Olivér</h1>
-                <blockquote>Sakkoz amíg programozod a sakkot</blockquote>
+                <blockquote>Sakkozz amíg programozod a sakkot</blockquote>
               </div>
             </div>
             <div class="lentinav">
@@ -35,37 +36,70 @@
         </section>
 		
 		 <!--about section-->
-        <section id="about"> 
-        <div class="rolam">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid autem, officiis modi minus ab recusandae tempora ipsa, facere asperiores, libero saepe? Porro eius libero fuga excepturi voluptate nihil, expedita ab.
-        Quaerat cumque reprehenderit quo accusantium sunt facere facilis. Eius quia vitae, hic enim suscipit, expedita asperiores blanditiis amet accusantium modi doloribus itaque non! Corporis officiis reiciendis omnis quasi ut asperiores?
-        Tempore, rerum! Rem porro illo provident aperiam asperiores vel, quis praesentium officia vitae sapiente, est modi, neque enim! Laudantium ea error commodi maxime ut! Reiciendis distinctio impedit excepturi rerum quam?
-        Repellat laboriosam animi incidunt inventore illo accusantium consectetur, ipsa ullam, maxime veritatis ex nihil deserunt hic facilis autem natus maiores alias quia doloremque tenetur repellendus placeat quae tempore impedit. Voluptatibus?
-        Quia, quis blanditiis impedit commodi, placeat aspernatur nostrum quidem ipsum ex quos ratione sed deleniti necessitatibus veritatis voluptatibus! Ipsum in id nihil repudiandae nam aliquam quo eius minus labore a.
-        Eligendi, perspiciatis quasi delectus exercitationem et nemo beatae doloremque ab ipsam inventore, sed quidem animi eos iure at. Mollitia quo provident possimus perspiciatis atque ut quia veniam nostrum, molestias alias!
-        Voluptas voluptatum reiciendis commodi vel ab accusantium, culpa maxime quaerat at voluptatem, alias odit recusandae ipsam id. Quo consectetur rerum facere sed repellendus corrupti nesciunt distinctio vero, ab expedita eum.
-        Laboriosam eveniet placeat quo perferendis commodi sed, rem qui vel voluptates explicabo magni itaque minima nulla beatae magnam nobis laborum harum ex possimus deleniti repellat veritatis ea! Illum, dolorum exercitationem?
-        Assumenda et totam eaque est quos voluptas aut expedita quis eveniet rerum? Quam laboriosam sapiente commodi aliquam officia odit fugiat ullam, repellat sunt similique nihil accusamus eveniet quis veniam voluptate.
-        Ut id, autem rem culpa non hic assumenda suscipit quae dolorum inventore mollitia minima qui distinctio, eligendi magni excepturi at dolorem voluptatem beatae? Eligendi perferendis sunt, quibusdam soluta voluptate iusto!
-        Facere possimus recusandae, unde quas soluta quibusdam natus. Facere, suscipit modi corporis sequi commodi vel dolore cupiditate explicabo numquam dolorem quasi eos. In maiores atque laboriosam, ex doloribus quo voluptatibus.
-        Soluta, quos eos! Esse in nam exercitationem inventore, cupiditate impedit excepturi, eum obcaecati aliquid ducimus nihil qui iste. Tenetur voluptatibus iure numquam sapiente modi. Inventore sequi alias tenetur id corporis!
-        Debitis nobis quam nisi eveniet, dolorem distinctio fugiat, consectetur repudiandae consequatur, adipisci impedit numquam velit minus? Eveniet fugiat labore odio, fugit dolore quaerat reiciendis consequuntur debitis soluta maiores possimus est.
-        Perspiciatis quaerat doloribus tenetur error hic! Assumenda, praesentium. Eligendi recusandae dolore porro voluptates adipisci maxime non dolorem deserunt rem excepturi, voluptate aliquid repellendus vitae praesentium incidunt? Ipsum, recusandae officiis? Voluptates?
-        Sunt voluptatem sit facere sequi dolorem ut ipsum amet optio incidunt recusandae eaque, consequuntur deserunt harum delectus velit id fugiat minus nesciunt libero ratione aspernatur dolorum blanditiis exercitationem modi. Obcaecati.
-        Ipsum, magni aliquid esse beatae, saepe veritatis omnis a placeat commodi, rem facere est obcaecati. Dolore maiores quam deleniti omnis sunt? Magnam molestias id sit error, temporibus vitae iste sed.
-        Provident enim dolore, cum facere fuga sit tempore. Incidunt quod dolorum, mollitia assumenda fugit atque repudiandae delectus tempore debitis vitae ducimus quo nulla minima blanditiis sunt deserunt! Praesentium, numquam qui.
-        Quia commodi facilis labore exercitationem nemo, harum nam aliquid ad nulla iste quaerat est saepe impedit ea molestias repellat vel animi eum provident deserunt placeat excepturi, enim ipsa nesciunt. Eius.
-        Autem ut distinctio, aliquam non, eligendi quas fuga harum maiores ad molestias perferendis aliquid iure porro! Incidunt eaque, quibusdam vel esse, voluptatum repellendus sunt dolore exercitationem voluptatem sit praesentium ex!
-        Eos expedita amet autem eveniet voluptas non temporibus laborum cupiditate illo repudiandae eius architecto similique quibusdam quisquam voluptates quas, tempore alias. Voluptas voluptates eligendi alias iure aspernatur dolorem, reprehenderit tempora?</div>
+      <section id="about"> 
+        
+        <div class="rolam">
+          <h1>Rólam</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati libero aliquam tenetur recusandae quis eos est unde nam doloremque. Nesciunt cumque id ad dicta esse, hic obcaecati a repudiandae.
+        Itaque eius nobis ut alias fuga placeat omnis doloremque. Rerum sit eum quae. Repellendus necessitatibus, voluptatum quia atque illum tempore molestiae quidem voluptatem in. Expedita architecto dolorum velit harum dicta!
+        Voluptatibus excepturi sit quo dolores, nam autem enim ratione vitae magni, facere iure ullam provident dignissimos. Nisi exercitationem natus beatae, commodi temporibus ratione sequi. Cupiditate rem velit maiores ea at.
+        Totam, a temporibus eos labore doloribus nulla culpa minima quaerat iusto, alias hic delectus, et odio reiciendis molestiae voluptate suscipit? Soluta quia odit voluptatem fuga voluptatum odio modi, fugiat molestias?
+        Aliquam voluptates, corporis temporibus expedita est commodi numquam nostrum! Reprehenderit laudantium eveniet sunt placeat rerum ipsam sequi quae doloribus, delectus, quod illum tempore impedit nihil dolor necessitatibus, quam debitis totam.
+        Architecto error libero velit quidem beatae omnis unde neque eos distinctio, impedit excepturi eveniet odio fuga repellendus eius qui tempora rem numquam nemo temporibus non ut officiis dolor magni! Alias!
+        Dolorum, aspernatur. Non, numquam mollitia explicabo asperiores, natus esse, reiciendis voluptatibus iure error enim et doloribus pariatur eius. Quos dolorem sit ab repudiandae, distinctio consequatur! Eum error atque sed unde!
+        Minus similique, rerum id molestiae esse, neque facilis cupiditate aliquam sed unde, illum assumenda quo porro dolor est veritatis explicabo. Totam eum sit aliquid nam voluptatem repudiandae porro a ipsam?
+        Tempora, quisquam eveniet qui nobis repellat eaque esse sapiente facilis. Fuga quis laboriosam incidunt voluptas vero soluta accusamus, eos totam vel harum, velit nostrum odio adipisci praesentium nisi quaerat earum.
+        Molestias exercitationem dolor eligendi, facere delectus placeat. Doloremque officiis placeat praesentium ipsum odit blanditiis. Nihil amet adipisci, voluptatem deleniti sequi vel enim sit natus eum necessitatibus cupiditate ex exercitationem impedit?
+        Quas provident accusantium necessitatibus est alias iusto quam, soluta totam rem voluptate velit perferendis obcaecati dolores, illo maiores temporibus voluptates tempora nam voluptatum reprehenderit fugit dolore modi ut optio? Minima.
+        Harum eum similique dolor ipsa ullam nam reiciendis, alias tempora, corporis in, dolorem quas quo accusamus nesciunt adipisci blanditiis. Asperiores nobis atque possimus accusantium iusto non reiciendis dolorem! Officiis, perspiciatis.
+        Sint expedita ipsum atque voluptas! Quas, minus qui! Error odit, illo veritatis, minima assumenda iure molestiae vitae impedit tempore excepturi corrupti perspiciatis nostrum, consequatur id nesciunt voluptas rem ex eligendi.
+        Velit minus corrupti nobis vero necessitatibus exercitationem, repellat consequatur sed eveniet quam cumque a id. Omnis culpa sint maiores quidem cumque, eum ad deserunt harum consequuntur animi at doloremque optio.
+        Corporis at sit provident illo, omnis voluptates sed. Quo commodi ducimus voluptatibus consequatur facilis neque saepe dolores molestias porro, laboriosam aperiam, molestiae reprehenderit. Illo voluptatem perspiciatis consequatur rem in adipisci?
+        Libero, eius omnis numquam deleniti saepe temporibus asperiores officia quos vero impedit molestias tenetur voluptas, modi nostrum quae dignissimos sequi assumenda suscipit. Tempore modi officiis magnam ipsa. Possimus, nihil harum!
+        Officia atque facilis fugiat asperiores iusto, maxime, nostrum nemo quidem odio ullam dolore cumque modi aliquid at illum fugit illo veritatis perferendis? Iste, voluptate quos sunt voluptatibus debitis molestias modi.
+        Ea ad, eius delectus beatae alias numquam laboriosam fugit, cupiditate quibusdam ut id illo aliquam maxime perferendis aut labore iusto dolorem cum tenetur consequatur ducimus voluptatem nobis mollitia. Deleniti, sapiente.
+        Qui recusandae, quibusdam iste cupiditate id cum, aliquid asperiores sunt ratione ab voluptate, facere porro temporibus. Tempore dolor, facere iusto cum ipsa vitae, nam perferendis impedit, esse provident minus nesciunt?
+        Nobis minus perferendis aperiam veritatis repudiandae, qui quo quasi. Quia rem labore neque magni alias modi corporis accusamus qui provident aperiam eligendi molestiae debitis maxime, obcaecati vel libero est perspiciatis.
+        Molestias, optio! Architecto sed eum incidunt tempore nemo rem quia voluptates non quas ut qui, expedita dolorem recusandae numquam aperiam quos fugiat error, officia commodi quae ipsum tempora facilis eveniet.
+        Vel, inventore ducimus in velit veritatis atque harum. Architecto aperiam voluptas beatae ad perspiciatis sed incidunt totam quos consequuntur, minus laborum. Officiis, itaque numquam reiciendis illum quod distinctio qui quasi.
+        Ullam illo similique quos dolor velit. Animi voluptatibus aliquid dolorem ducimus, nisi rem beatae quaerat quos minus iure ut tempore, laudantium mollitia magnam ipsam deleniti cum hic! Iusto, asperiores architecto!
+        Provident, dolore. Dicta provident quam, sunt eos error in expedita iste deleniti voluptas ad doloremque ducimus eum nesciunt, cupiditate a vero blanditiis consequatur aperiam architecto vitae eaque quidem nostrum. Eaque.
+        Quibusdam, dolorem! Illo deleniti in dolores veniam expedita? Voluptas autem odio voluptatum, ducimus veniam repellendus quidem consequuntur quam dolorum architecto adipisci? Quas ipsam porro tempore perspiciatis iste vel accusamus repellat.</div>
+      </p> 
+      </div>
 		</section>
-		
 		 <!--work section-->
-        <section id="work"> 
-				....
+    <section id="work"> 
+      <h1>Munkáim</h1>
 		</section>
 		
 		 <!--contact section-->
-        <section id="contact"> 
-				....
+    <section id="contact"> 
+      <h1>Kapcsolat</h1>
+			<div class="elerhetoseg">
+        <div>
+          <h2>Elérhetőség</h2>
+        <ul>
+          <li>lorem@lorem.lorem</li>
+          <li>+12312313123</li>
+          <li>6000,Kecskemét Kandó</li>
+        </ul>
+      </div>
+      <div>
+        <form action="">
+          <h2>Contact Form</h2>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Last Name">
+          <input type="text" placeholder="Email">
+          
+          <input type="number" placeholder="Phone number">
+          <input id="hossz" type="text" placeholder="Message">
+        </form>
+      </div>
+      <div>
+        <img src="kando.png" alt="">
+      </div>
+      </div>
 		</section>
 		
     </div>

@@ -2,11 +2,14 @@
   padding: 0;
   margin: 0;
 
-
 }
 section{
   min-height: fit-content;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
 }
 :root {
   --black:#222831;
@@ -19,6 +22,8 @@ body{
   height: 100vh;
   width: 100%;
   
+background-color: var(--black);
+  
 }
 html{
   scroll-behavior: smooth;
@@ -26,12 +31,12 @@ html{
 .container{
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%; /* Az egész tartalom szélessége 100%-ban illeszkedik */
-
-  background: var(--black); 
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
   
 
   
@@ -41,8 +46,9 @@ html{
 .hero{
 
   min-width: 100%; /* A szekciók is 100%-os szélességűek lesznek */
-  min-height: calc(100vh - 76px); 
-  background: var(--black); 
+  min-height: calc(100vh); 
+  max-height: fit-content;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(hatter.jpg);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -52,8 +58,9 @@ html{
   background-position:center center; 
   background-repeat:no-repeat; 
   font-size: 1.3vw;
- 
+ z-index: 1;
 }
+
 .hero img {
   border-radius: 50%; 
   width: 300px;  
@@ -82,9 +89,6 @@ html{
   padding: 0;
 }
 .fenti{
-  width:40%;
-  max-width: 50%;
-  min-width:0%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -116,7 +120,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--gray);
+  background-color: var(--white);
   font-size: 18px;
   position: sticky;
   top: 0;
@@ -200,6 +204,206 @@ a{
   background-color: #253247;
   color: #026891;
 }
+
+
+
+.rolam{
+  max-width: 800px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  box-shadow: 0px 0px 5px 5px var(--gray);
+  padding: 50px 30px 50px 30px;
+  color: var(--white);
+  margin: 40px;
+}
+.rolam h1{
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    z-index: -10;
+    min-height: fit-content;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
+    gap: 50px;
+}
+#work h1{
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  box-shadow: 0px -5px 5px -2px var(--white);
+
+  padding-top: 30px;
+}
+.munkaim{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 40%;
+  gap: 40px;
+  padding: 40px 30px 40px 30px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 2px var(--white);
+  border: 3px solid var(--black);
+
+
+}
+.munkaim img{
+  max-width: 100%;
+  max-height: 300px;
+  border: 3px solid var(--gray);
+  border-radius: 15px;
+  
+}
+.jobb{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  color: var(--black);
+  
+  max-width: fit-content;
+}
+.jobb h1{
+  text-align: left !important;
+  color: var(--black)!important;
+  margin-bottom: 15px;
+}
+.jobb ul{
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.jobb li {
+  list-style-type: circle;
+}
+.bal{
+  
+}
+
+
+.jobb a{
+  color: var(--black)!important;
+  list-style-type: none;
+  width: fit-content;
+  padding: 10px;
+  transition: 0.5s;
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+  
+}
+.jobb a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+  
+}
+.jobb a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+#contact h1{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  color: var(--white);
+  box-shadow: 0px -5px 5px -2px var(--white);
+  padding: 50px;
+
+}
+.elerhetoseg{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.elerhetoseg >*{
+  box-sizing: border-box;
+  max-width: fit-content;
+  
+  
+  flex-grow: 1;      
+  flex-shrink: 0;   
+  
+}
+form{
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 5px 5px var(--white);
+  border-radius: 15px;
+}
+.elerhetoseg div{
+  color: var(--white);
+}
+input{
+ 
+  margin: 20px;
+  color: var(--black);
+  height: 30px;
+  width: 300px;
+  padding: 10px;
+}
+#contact ul{
+  display: flex;
+  flex-direction: column;
+}
+#contact img{
+  max-width: 500px;
+  height: auto;  
+  max-height: 600px;
+  object-fit: cover;  
+  border-radius: 15px;
+}
+#hossz{
+  height: 150px;
+}
 @media (max-width: 1200px) {
 
   .hero{
@@ -207,6 +411,11 @@ a{
   }
   nav{
     font-size: 15px;
+  }
+  .munkaim{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 }
 @media (max-width: 500px) {
@@ -223,15 +432,26 @@ a{
   .logo{
     width: 100%;
   }
-  .logo img{
+  .munkaim{
+    display: block;
+  }
+  .elerhetoseg >*{
+    box-sizing: border-box;
+    max-width: fit-content;
+    margin: 20px;
     
+    flex-grow: 1;      
+    flex-shrink: 0;   
     
   }
-}
-
-
-
-
-.rolam{
-  width: 100%;
+  input{
+ 
+    max-width: 175px;
+  }
+  #contact img{
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;  
+    border-radius: 15px;
+  }
 }
